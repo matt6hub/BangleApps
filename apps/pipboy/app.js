@@ -39,14 +39,6 @@ Bangle.on('HRM-raw', function(v){
   }
 });
 
-var counter = 5;
-function countDown(){
-  if(counter){
-    setTimeout(countDown, 1000);
-  }
-}
-countDown();
-
 var wasHigh = 0, wasLow = 0;
 var lastHigh = getTime();
 var hrmList = [];
@@ -130,6 +122,7 @@ function drawClock() {
   g.setColor(gold);
   g.setFont("6x8", tFont);
   g.drawString("HP "+ str + " BPM", 38, 192);
+  readHRM();
   var t = new Date();
   var h = t.getHours();
   var m = t.getMinutes();
