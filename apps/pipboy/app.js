@@ -77,7 +77,7 @@ function bottomLine() {
     currentBPM = d.bpm;
     lastBPM = currentBPM;
   }
-  g.drawString("HP "+ currentBPM + " BPM", 38, 192);
+  g.drawString("HP "+ d.bpm + " BPM", 38, 192);
   g.drawString("LEVEL " + day, 100, 192); //show week day
   g.drawRect(127, 192, 235, 198); //frame
   g.fillRect(128, 193, 128 + ((107/24)*h), 197); //progress bar showing progress of day
