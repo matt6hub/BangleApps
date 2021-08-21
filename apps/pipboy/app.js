@@ -119,10 +119,7 @@ function bottomLine() {
 }
 
 function drawClock() {
-  g.setColor(gold);
-  g.setFont("6x8", tFont);
-  g.drawString("HP "+ str + " BPM", 38, 192);
-  readHRM();
+  
   var t = new Date();
   var h = t.getHours();
   var m = t.getMinutes();
@@ -146,6 +143,10 @@ function drawClock() {
   //draw date
   g.setFont("6x8", tFont);
   g.drawString(date, 67, 177);
+  g.setColor(gold);
+  g.setFont("6x8", tFont);
+  g.drawString("HP "+ str + " BPM", 38, 192);
+  readHRM();
 }
 
 function drawAll() {
