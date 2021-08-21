@@ -175,4 +175,3 @@ Bangle.loadWidgets();
 Bangle.drawWidgets();
 setInterval(drawClock, 1E4);
 drawAll();
-readHRM();
