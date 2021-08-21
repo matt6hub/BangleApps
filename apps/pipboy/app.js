@@ -159,7 +159,6 @@ function drawAll() {
   topLine();
   bottomLine();
   drawClock();
-  readHRM();
 }
 
 // special function to handle display switch on
