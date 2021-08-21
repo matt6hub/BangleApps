@@ -105,7 +105,7 @@ function bottomLine() {
   g.setFont("6x8", tFont);
 
   //first line
-  g.setColor(dGold2);
+  g.setColor(gold);
   g.fillRect(5, 175, 100, 185); //DATE
   g.fillRect(105, 175, 160, 185);//STIM
   g.fillRect(166, 175, 239, 185); // RADAWAY
@@ -116,7 +116,7 @@ function bottomLine() {
   g.drawString("RADAWAY (8)", 205, 177);
 
   //second line
-  g.setColor(dGold2);
+  g.setColor(gold);
   g.fillRect(5, 190, 70, 200);
   g.fillRect(75, 190, 239, 200);
 
@@ -150,15 +150,15 @@ function drawClock() {
   //draw date
   g.setFont("6x8", tFont);
   g.drawString(date, 67, 177);
-  g.setColor(gold);
-  g.setFont("6x8", tFont);
-  g.drawString("HP "+ str + " BPM", 38, 192);
 }
 
 function drawAll() {
   topLine();
   bottomLine();
   drawClock();
+  g.setColor(gold);
+  g.setFont("6x8", tFont);
+  g.drawString("HP "+ str + " BPM", 38, 192);
 }
 
 // special function to handle display switch on
