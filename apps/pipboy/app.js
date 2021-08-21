@@ -25,9 +25,6 @@ function onHRM(h){
     },40);
   }
   var str = hrmInfo.bpm;
-  g.setColor(gold);
-  g.setFont("6x8", tFont);
-  g.drawString("HP "+ str + " BPM", 38, 192);
 }
 
 Bangle.on('HRM', onHRM);
@@ -153,6 +150,9 @@ function drawClock() {
   //draw date
   g.setFont("6x8", tFont);
   g.drawString(date, 67, 177);
+  g.setColor(gold);
+  g.setFont("6x8", tFont);
+  g.drawString("HP "+ str + " BPM", 38, 192);
 }
 
 function drawAll() {
