@@ -159,6 +159,7 @@ function drawAll() {
   topLine();
   bottomLine();
   drawClock();
+  readHRM();
 }
 
 // special function to handle display switch on
@@ -174,3 +175,4 @@ Bangle.loadWidgets();
 Bangle.drawWidgets();
 setInterval(drawClock, 1E4);
 drawAll();
+readHRM();
