@@ -3,7 +3,7 @@ const bFont = 4;
 const sFont = bFont / 2;
 const tFont = sFont / 2;
 
-const gold = "#c8a853";
+const gold = "#ffff00";
 const dGold1 = "#90793b";
 const dGold2 = "#90783a";
 
