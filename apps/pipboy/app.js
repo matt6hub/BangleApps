@@ -137,7 +137,7 @@ function drawClock() {
   g.setFontAlign(0, -1, 0);
 
   g.clearRect(0, 110, 150, 140);
-  g.drawString(time, 70, 110);
+  g.drawString(time, 95, 110);
 
   //draw date
   g.setFont("6x8", tinyFont);
