@@ -122,10 +122,11 @@ function drawClock() {
   var t = new Date();
   var h = t.getHours();
   var m = t.getMinutes();
+  var sec = t.getSeconds();
   var dd = t.getDate();
   var mm = t.getMonth()+1; //month is zero-based
   var yy = t.getFullYear();
-  var time = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+  var time = ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + sec).substr(-2);
 
   //create date string
   if (dd.toString().length < 2) dd = '0' + dd;
