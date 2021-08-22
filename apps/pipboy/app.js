@@ -109,8 +109,8 @@ function drawClock() {
 }
 
 function drawAll() {
+  Bangle.setHRMPower(1);
   topLine();
-  boy();
   bottomLine();
   drawClock();
 }
@@ -119,7 +119,6 @@ Bangle.on('lcdPower', function(on) {
   if (on) drawAll();
 });
 
-Bangle.setHRMPower(true, "pipboy");
 g.clear();
 // Show launcher when button pressed
 Bangle.setUI("clock");
