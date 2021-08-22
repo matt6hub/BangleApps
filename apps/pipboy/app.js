@@ -27,7 +27,6 @@ function topLine() {
   g.drawString("STAT", 65, 34);
   g.drawString("INV", 130, 34);
   g.drawString("DATA", 190, 34);
-  g.setColor(darkGreen);
   g.drawString("STATUS", 45, 55);
   g.drawString("SPEC", 122, 55);
   g.drawString("PERKS", 195, 55);
