@@ -89,7 +89,6 @@ function drawInit(){
   g.drawString("STATUS", 45, 55);
   g.drawString("SPEC", 122, 55);
   g.drawString("PERKS", 195, 55);
-  g.drawImage(pip, 165, 85);
   var today = new Date();
   var yy = today.getFullYear();
   var day = today.getDay(); //day of week as number
