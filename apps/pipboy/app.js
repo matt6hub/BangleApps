@@ -171,6 +171,6 @@ g.clear();
 Bangle.setUI("clock");
 Bangle.loadWidgets();
 Bangle.drawWidgets();
-setInterval(drawClock, 1E4);
+setInterval(drawClock, 1E3);
 drawInit();
 drawClock();
